@@ -1,7 +1,16 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
+//Arrays
+// Question one
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+console.log(red, orange, yellow, green, blue, indigo, violet);
+//Question Two
+const [r, o, y, g, b, , v] = colors;
+//Question Three
+const [indg] = 'Indigo';
 
+//Variables
 const muppet = {
   muppetName: 'Miss Piggy',
   color: 'pink',
@@ -24,6 +33,13 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+//Question one
+const {muppetName, color, song,job, partner} = muppet;
+const {nestedName,nestedColor, album, nestedJob, nestedPartner} = nestedMuppet;
+
+//Question Two
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const {job, partner} = muppet;
 
 // Strings
 
