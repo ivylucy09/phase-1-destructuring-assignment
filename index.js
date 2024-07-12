@@ -1,4 +1,14 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+//Strings
+//Question one
+const [moo, neigh, bleat, oinks, cluck] = farmAnimals.split('')
+//Question two
+const farmAnimals1 = 'cow sheep pig chicken'
+const [bessie, dolly, babe, little] = farmAnimals1.split('')
+
+//Question three
+const farmAnimals2 = 'cow sheep pig'
+const [blackAndWhite, black, pink] = farmAnimals2.split('')
 
 //Arrays
 // Question one
@@ -8,7 +18,8 @@ console.log(red, orange, yellow, green, blue, indigo, violet);
 //Question Two
 const [r, o, y, g, b, , v] = colors;
 //Question Three
-const [indg] = 'Indigo';
+const [, , , , , indg] = colors;
+//const [indg] = 'Indigo'; invalid point.
 
 //Variables
 const muppet = {
@@ -39,7 +50,7 @@ const {nestedName,nestedColor, album, nestedJob, nestedPartner} = nestedMuppet;
 
 //Question Two
 const {song2, song4} = nestedMuppet.album.theMuppetMovie;
-const {job, partner} = muppet;
+const {nestedJob: job1, nestedPartner: partner1} = nestedMuppet;
 
 // Strings
 
